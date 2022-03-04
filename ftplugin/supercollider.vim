@@ -256,6 +256,7 @@ function SClangStart(...)
     exec "set wfh"
     exec l:term .s:sclangPipeApp
     exec "normal G"
+	wincmd L
     wincmd w
   elseif l:tmux || l:screen
     if l:tmux
